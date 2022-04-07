@@ -131,3 +131,6 @@ dmypy.json
 
 # Credentials
 /project-1/credentials.py
+
+# Exercises
+/exercises
