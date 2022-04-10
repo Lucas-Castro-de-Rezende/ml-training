@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  exercises:
+    container_name: 'exercises'
+    command: bash -c "jupyter lab --notebook-dir=/home/exercises --ip='0.0.0.0' --port=8888 --no-browser --allow-root"
+    build: .
+    ports:
+      - '8888:8888'
+    volumes:
+      - ./:/home/exercises
